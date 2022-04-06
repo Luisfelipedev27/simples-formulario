@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulário.css" media="screen">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id="titulo">Cadastro de Devs</h1>
+        <pc id="subtitulo">Complete suas informações</p>
+        <br> <!--Para quebrar a linha-->
+    </div>
+    <form action="formulário">
+        <fieldset class="grupo"><!--Agrupador de Campos e Elementos-->
+            <div class="campo">
+                <label for="nome"><strong>nome</strong></label> <!--Para identificar o campo "nome" do formulário-->
+                <input type="text" name="Nome" id="nome" required> <!--input se refere a atributo-->  <!-- REQUIRIDE= VOCE É OBRIGADO A RESPONDER -->
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+            <div class="campo">
+                <label><strong>Qual lado da aplicação voce desenvolve?</strong></label>
+                <label for="Especialidade2">
+                    <input type="radio" name="DevWeb" value="Frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="DevWeb" value="BackEnd">Back-End
+                </label>
+                <label>
+                    <input type="radio" name="DevWeb" value="Fullstack">Fullstack
+                </label>
+            </div>
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade:</strong></label>
+                <select id="senioridade">
+                    <option>Selecione</option> <!--Como se fosse a opção oculta-->
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+            
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione as tecnologias que voce utiliza:</strong></label><br><br> <!--br para pular 2 linhas-->
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">  <!--Checkbox é a caixinha -->
+                    <label for="tecnologia1">HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS"> 
+                    <label for="tecnologia2">CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JAVASCRIPT"> 
+                    <label for="tecnologia3">JAVASCRIPT</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PYTHON"> 
+                    <label for="tecnologia4">PYTHON</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="SQL"> 
+                    <label for="tecnologia5">SQL</label>
+                </div>
+            </fieldset>
+            <div class="campo">       
+                <br>
+                <label for=""><strong>Conte um pouco da sua experiencia</strong></label>
+                <textarea rows="3" style="width: 26em" id="experiencia" name="experiencia"></textarea> <!-- TextArea é usado para traçar uma área onde o usuário escreve um texto -->
+            </div>
+            <button class="botao" type="submit">Concluído</button>
+
+
+    </form>
+    
+
+
+</body>
+</html>
